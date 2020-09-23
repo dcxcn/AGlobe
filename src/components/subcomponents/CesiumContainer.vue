@@ -7,8 +7,7 @@
 export default {
   name: '',
   mounted () {
-    // var viewer = new Cesium.CesiumWidget('cesiumContainer')
-  // eslint-disable-next-line no-undef
+    var Cesium = window.Cesium
     const tdt = new Cesium.WebMapTileServiceImageryProvider({
       url:
         'http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=ebf64362215c081f8317203220f133eb',
@@ -18,10 +17,9 @@ export default {
       tileMatrixSetID: 'GoogleMapsCompatible',
       show: false
     })
-    // eslint-disable-next-line no-undef
     var viewer = new Cesium.Viewer('cesiumContainer', {
       imageryProvider: tdt,
-      selectionIndicator: true,
+      selectionIndicator: false,
       animation: false,
       baseLayerPicker: false,
       geocoder: false,
@@ -29,8 +27,9 @@ export default {
       timeline: false,
       sceneModePicker: true,
       navigationHelpButton: false,
-      infoBox: true,
-      fullscreenButton: true
+      infoBox: false,
+      fullscreenButton: true,
+      terrainProvider: Cesium.createWorldTerrain()
     })
     // eslint-disable-next-line no-undef
     viewer.extend(Cesium.viewerCesiumNavigationMixin, {})

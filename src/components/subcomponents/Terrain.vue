@@ -91,7 +91,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['myMap'])
+    ...mapState(['viewer'])
   },
   created () {
 
@@ -102,8 +102,8 @@ export default {
     },
     validTerrain () {
       this.$Message.info('加载')
-      var viewer = this.myMap.viewer
-      var Cesium = this.myMap.Cesium
+      var viewer = this.viewer
+      var Cesium = window.Cesium
 
       var terrainProvider = new Cesium.CesiumTerrainProvider({
         url: 'https://assets.agi.com/stk-terrain/v1/tilesets/world/tiles', // 默认立体地表
@@ -116,15 +116,15 @@ export default {
     },
     cancelTerrain () {
       this.$Message.info('加载')
-      var viewer = this.myMap.viewer
-      var Cesium = this.myMap.Cesium
+      var viewer = this.viewer
+      var Cesium = window.Cesium
       var ellipsoidTerrainProvider = new Cesium.EllipsoidTerrainProvider()
       // 地形平坦
       viewer.scene.terrainProvider = ellipsoidTerrainProvider
     },
     elevation () {
       this.$Message.info('加载')
-      var viewer = this.myMap.viewer
+      var viewer = this.viewer
       // var Cesium = this.myMap.Cesium
 
       // var viewer = new Cesium.Viewer('cesiumContainer', {
