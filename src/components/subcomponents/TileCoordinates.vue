@@ -55,7 +55,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['myMap'])
+    ...mapState(['viewer'])
   },
   created () {
 
@@ -69,18 +69,17 @@ export default {
     },
     submit () {
       this.$Message.info('加载')
-      var viewer = this.myMap.viewer
-      var Cesium = this.myMap.Cesium
+      var viewer = this.viewer
 
       // var imageryLayers = viewer.imageryLayers
-
+      // eslint-disable-next-line no-undef
       this.imageryLayer = viewer.imageryLayers.addImageryProvider(new Cesium.TileCoordinatesImageryProvider())
     },
 
     cancel () {
       // TODO: 取消的bug吗
       this.$Message.info('移除')
-      var viewer = this.myMap.viewer
+      var viewer = this.viewer
       console.log(viewer.imageryLayers.remove(this.imageryLayer))
     }
   },

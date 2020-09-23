@@ -70,7 +70,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['myMap'])
+    ...mapState(['viewer'])
   },
   created () {
 
@@ -78,7 +78,7 @@ export default {
   methods: {
     valideMouseEvent () {
       this.$Message.info('生效')
-      var viewer = this.myMap.viewer
+      var viewer = this.viewer
       // var Cesium = this.myMap.Cesium
 
       var scene = viewer.scene
@@ -91,8 +91,9 @@ export default {
     },
     submit () {
       this.$Message.info('键盘控制生效')
-      var viewer = this.myMap.viewer
-      var Cesium = this.myMap.Cesium
+      var viewer = this.viewer
+      // eslint-disable-next-line no-undef
+      var Cesium = window.Cesium
 
       var scene = viewer.scene
       var canvas = viewer.canvas
