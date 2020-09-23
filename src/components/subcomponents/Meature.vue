@@ -5,11 +5,11 @@
       <br />地图量算
     </Button>
 
-    <Drawer title="地图量算" v-model="value3" width="200" :styles="styles">
+    <Drawer title="地图量算" v-model="value3" :mask="false" width="120" :styles="styles">
       <div class="demo-drawer-footer">
         <Button style="margin-right: 8px" @click="clearMeasure">清除</Button>
-        <Button type="primary" @click="measureLine">测距</Button>
-        <Button type="primary" @click="measurePolygon">测面</Button>
+        <Button style="margin-right: 8px" @click="measureLine">测距</Button>
+        <Button style="margin-right: 8px" @click="measurePolygon">测面</Button>
       </div>
     </Drawer>
   </div>
