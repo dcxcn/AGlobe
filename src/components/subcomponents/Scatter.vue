@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <a @click="value3 = true">
-      <img src="../../common/images/scatter.png" style="width: 32px" />
+      <img src="../../assets/images/scatter.png" style="width: 32px" />
       <br />散点图
     </a>
 

@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/night_landscape.png" style="width: 32px">
+            <img src="../../assets/images/night_landscape.png" style="width: 32px">
             <br>地图效果</a>
 
         <Drawer

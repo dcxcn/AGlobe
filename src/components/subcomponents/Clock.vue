@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/clock.png" style="width: 32px">
+            <img src="../../assets/images/clock.png" style="width: 32px">
             <br>时钟
         </Button>
 

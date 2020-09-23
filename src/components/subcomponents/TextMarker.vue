@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/text.png" style="width: 32px">
+            <img src="../../assets/images/text.png" style="width: 32px">
             <br>文字标注</a>
 
         <Drawer

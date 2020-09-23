@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/terrain.png" style="width: 32px">
+            <img src="../../assets/images/terrain.png" style="width: 32px">
             <br>地形
         </Button>
 

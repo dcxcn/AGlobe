@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/book-mark.png" style="width: 16px">
+            <img src="../../assets/images/book-mark.png" style="width: 16px">
             <br>新建书签
         </Button>
 

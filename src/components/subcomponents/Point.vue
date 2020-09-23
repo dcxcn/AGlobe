@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/point.png" style="width: 32px">
+            <img src="../../assets/images/point.png" style="width: 32px">
             <br>点</a>
 
         <Drawer

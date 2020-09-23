@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/camera.png" style="width: 32px">
+            <img src="../../assets/images/camera.png" style="width: 32px">
             <br>相机控制
         </Button>
 

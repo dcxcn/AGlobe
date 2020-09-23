@@ -2,15 +2,15 @@
     <div class="container">
 
         <a @click="to3d">
-            <img src="../../common/images/planet.png" style="width: 16px">
+            <img src="../../assets/images/planet.png" style="width: 16px">
             三维视图
         </a>
         <a @click="toGLB">
-            <img src="../../common/images/planet.png" style="width: 16px">
+            <img src="../../assets/images/planet.png" style="width: 16px">
             哥伦布视图
         </a>
         <a @click="to2d">
-            <img src="../../common/images/grid.png" style="width: 16px">
+            <img src="../../assets/images/grid.png" style="width: 16px">
             二维 视图
         </a>
 

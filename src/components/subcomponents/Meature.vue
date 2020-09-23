@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Button @click="value3 = true">
-      <img src="../../common/images/ruler.png" style="width: 32px" />
+      <img src="../../assets/images/ruler.png" style="width: 32px" />
       <br />地图量算
     </Button>
 

@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/mouse.png" style="width: 32px">
+            <img src="../../assets/images/mouse.png" style="width: 32px">
             <br>Pick</a>
 
         <Drawer

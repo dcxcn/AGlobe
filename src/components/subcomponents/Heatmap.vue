@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/HEAT_MAP.png" style="width: 32px">
+            <img src="../../assets/images/HEAT_MAP.png" style="width: 32px">
             <br>热力图</a>
 
         <Drawer

@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/flyTo.png" style="width: 32px">
+            <img src="../../assets/images/flyTo.png" style="width: 32px">
             <br>模拟飞行
         </Button>
 

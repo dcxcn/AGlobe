@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/polygon.png" style="width: 32px">
+            <img src="../../assets/images/polygon.png" style="width: 32px">
             <br>多边形</a>
 
         <Drawer

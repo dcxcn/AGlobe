@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/pyramid.png" style="width: 32px">
+            <img src="../../assets/images/pyramid.png" style="width: 32px">
             <br>瓦片网格
         </Button>
 

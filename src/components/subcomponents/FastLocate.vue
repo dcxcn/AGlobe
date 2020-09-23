@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/locate.png" style="width: 32px"><br>跳转
+            <img src="../../assets/images/locate.png" style="width: 32px"><br>跳转
         </Button>
 
         <Drawer
@@ -54,7 +54,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['myMap'])
+    ...mapState(['viewer'])
   },
   created () {
 
@@ -81,8 +81,8 @@ export default {
         this.$Message.error('输入有误')
       }
 
-      this.$store.state.myMap.viewer.camera.flyTo({
-        destination: this.$store.state.myMap.Cesium.Cartesian3.fromDegrees(lon, lat, height)
+      this.viewer.camera.flyTo({
+        destination: window.Cesium.Cartesian3.fromDegrees(lon, lat, height)
       })
     },
     cancel () {

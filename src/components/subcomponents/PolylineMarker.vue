@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/line.png" style="width: 32px">
+            <img src="../../assets/images/line.png" style="width: 32px">
             <br>线</a>
 
         <Drawer

@@ -2,7 +2,7 @@
     <div class="container">
 
         <Button @click="value3 = true">
-            <img src="../../common/images/layer.png" style="width: 32px">
+            <img src="../../assets/images/layer.png" style="width: 32px">
             <br>图层
         </Button>
 

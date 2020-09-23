@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/pin-small.png" style="width: 32px">
+            <img src="../../assets/images/pin-small.png" style="width: 32px">
             <br>地图钉</a>
 
         <Drawer

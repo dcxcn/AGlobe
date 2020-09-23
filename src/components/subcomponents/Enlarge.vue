@@ -2,11 +2,11 @@
     <div class="container">
 
         <Button @click="enlarge">
-            <img src="../../common/images/enlarge.png" style="width: 16px">
+            <img src="../../assets/images/enlarge.png" style="width: 16px">
             放大
         </Button>
         <Button @click="shrink">
-            <img src="../../common/images/shrink.png" style="width: 16px">
+            <img src="../../assets/images/shrink.png" style="width: 16px">
             缩小
         </Button>
 

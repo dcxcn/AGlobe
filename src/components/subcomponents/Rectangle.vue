@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/rectangle.png" style="width: 32px">
+            <img src="../../assets/images/rectangle.png" style="width: 32px">
             <br>矩形</a>
 
         <Drawer

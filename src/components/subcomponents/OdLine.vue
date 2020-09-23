@@ -2,7 +2,7 @@
     <div class="container">
 
         <a @click="value3 = true">
-            <img src="../../common/images/Line1.png" style="width: 32px">
+            <img src="../../assets/images/Line1.png" style="width: 32px">
             <br>OD线</a>
 
         <Drawer
